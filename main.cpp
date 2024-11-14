@@ -6,7 +6,12 @@
 using namespace std;
 
 void readfromfile(vector<string>& lines) {
-
+    ifstream in("file1.txt");
+    string line;
+    while (getline(in, line)){
+        lines.push_back(line);
+    }
+    in.close();
 }
 
 void printlines(const vector<string>& lines) {
