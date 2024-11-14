@@ -10,7 +10,9 @@ void readfromfile(vector<string>& lines) {
 }
 
 void printlines(const vector<string>& lines) {
-
+    for (const auto& line:lines) {
+        cout << line << endl;
+    }
 }
 
 void writetowile(const vector<string>& lines) {
