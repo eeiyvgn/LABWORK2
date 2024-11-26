@@ -14,7 +14,12 @@ void printlines(const vector<string>& lines) {
 }
 
 void writetowile(const vector<string>& lines) {
-
+    ofstream out;
+    out.open("file2.txt");
+    for (const auto& line : lines){
+        out << line << endl;
+    }
+    out.close();
 }
 
 int main() {
